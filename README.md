@@ -16,7 +16,9 @@ git branch --set-upstream-to=origin/main main
 Change `.gitignore` to exlude everything but a few files and directories:
 
 ```git
-*
-*.*
+/*
+!.zshrc
 !.config
+.config/*
+!.config/Code
 ```
