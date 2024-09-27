@@ -32,20 +32,22 @@
 # -- files --
 
 # !.*  # all dot files
-!.gitignore
-!.zshrc
-!.bashrc
 !.Rprofile
+!.bashrc
+!.gitconfig
+!.gitignore
+!.gitmodules
+!.ignore_ag
+!.profile
+!.pythonrc
+!.tmux.conf
+!.zshrc
 
 # -- directories --
 
 !.config
 .config/*
-!.config/radian
-!.config/poetry
-!.config/black
-!.config/autostart
-!.config/lazygit
+
 !.config/Code
 .config/Code/*
 !.config/Code/User/
@@ -53,11 +55,30 @@
 !.config/Code/User/*.json
 !.config/Code/User/*.lua
 
+!.config/pypoetry
+.config/pypoetry/*.lock
+
+!.config/radian
+!.config/poetry
+!.config/black
+!.config/autostart
+!.config/lazygit
+!.config/flake8
+!.config/.gitmodules
+!.config/redshift.conf
+!.config/pycodestyle
+!.config/onedrive
+!.config/systemd
+!.config/user-dirs.locale
+!.config/user-dirs.dirs
+
 !.ipython/
 .ipython/*
 !.ipython/profile_default
 .ipython/profile_default/*
 !.ipython/profile_default/startup
+
+!.templates
 
 # !.julia
 # !.jupyter

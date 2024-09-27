@@ -1,0 +1,96 @@
+
+; https://gist.github.com/karenyyng/f19ff75c60f18b4b8149/e6ae1d38fb83e05c4378d8e19b014fd8975abb39
+
+[user]
+  name = kraxli
+  email = kraxli@pm.me
+	; password = 730ecb2b2d310b302438c3339370d7e431b21549
+
+[github]
+  user = kraxli
+  token = token
+
+[push]
+  default = current
+
+[merge]
+	tool = "nvim"
+  ; tool = meld
+  conflictstyle = diff3
+
+; git config --global mergetool.fugitive.cmd 'nvim -f -c "Gvdiffsplit!" "$MERGED"'
+; git config --global merge.tool fugitive
+[mergetool]
+	keepBackup = false
+	prompt = false
+
+[mergetool "nvim"]
+	cmd = "nvim -d -c \"wincmd l\" -c \"norm ]c\" \"$LOCAL\" \"$MERGED\" \"$REMOTE\""
+	; "nvim  -d $MERGED $LOCAL $BASE $REMOTE -c 'wincmd J | wincmd ='"
+	; nvim -d "\$LOCAL" "\$REMOTE" "\$MERGED" -c "wincmd w" -c "wincmd J"
+
+[diff]
+  tool = nvimdiff
+  guitool = meld
+
+[difftool]
+  prompt = false
+
+[difftool "nvimdiff"]
+  cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+	; nvim -d \"$LOCAL\" \"$REMOTE\" -c \"wincmd w\" -c \"wincmd L\"
+
+# matching
+
+[alias]
+  # note: don't use "". Use ' '
+  a = add --all
+  c = commit
+  ; lg = log --format='%C(auto) %h %cs%Cgreen %an%C(auto) %d %s'  # https://www.atlassian.com/git/tutorials/git-log
+  # logg = log --graph --oneline --decorate
+  logg = log --date=short --abbrev-commit --graph --oneline  #  --pretty=format:"%h | %s%d [%an, %ad]"
+  logpretty = log --pretty=format:'%C(auto) %h - %ad, %Cgreen %an: %C(auto) %d %B' --graph
+  logp = log --pretty=format:'%C(auto) %h - %ad, %Cgreen %an: %C(auto) %d %B' --graph
+  ; logp = log --pretty='format:%C(auto)%h (%s, %ad)'
+
+  # Vim commands for git-log:
+    # command! GlogMine r!git log --pretty=format:"\%h | \%s\%d [\%an, \%ad]" --date=short --since=5.months.ago --author=David --no-merges
+    # command! Glog r!git log --pretty=format:"\%h | \%s\%d [\%an, \%ad]" --date=short --abbrev-commit --no-merges
+    # command! GlogGraph r!git log --pretty=format:"\%h | \%s\%d [\%an, \%ad]" --date=short --abbrev-commit --graph --simplify-by-decoration
+    #
+
+   cm = commit -m
+   ca = commit --amend
+   cam = commit -am
+   co = checkout
+   br = branch
+   bl = branch
+   bR = branch -r
+   st = status
+   lg = log --format='%C(auto) %h %cs%Cgreen %an%C(auto) %d %s'
+   df = diff
+   sm = stash -m
+   sl = stash list
+   ss = stash show
+   sp = stash pop
+   sd = stash drop
+   sa = stash apply
+
+[core]
+   autocrlf = true
+
+; [difftool "sourcetree"]
+;    cmd = "'' "
+;
+; [mergetool "sourcetree"]
+;   cmd = "'' "
+;   trustExitCode = true
+
+[init]
+  templatedir = /home/dave/.git-templates
+
+[credential]
+	helper = store
+
+; [kraxli]
+	; password = 730ecb2b2d310b302438c3339370d7e431b21549

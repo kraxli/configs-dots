@@ -1,0 +1,9 @@
+# put the following into the .zshrc / .bashrc file:
+# export PYTHONSTARTUP="$HOME/.pythonrc"
+
+import readline
+import rlcompleter
+
+readline.parse_and_bind("tab: complete")
+
+print("~/.pythonrc loaded")
