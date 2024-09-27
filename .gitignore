@@ -58,6 +58,11 @@
 !.config/pypoetry
 .config/pypoetry/*.lock
 
+
+!.config/onedrive
+.config/onedrive/*
+!.config/onedrive/config
+
 !.config/radian
 !.config/poetry
 !.config/black
@@ -67,7 +72,6 @@
 !.config/.gitmodules
 !.config/redshift.conf
 !.config/pycodestyle
-!.config/onedrive
 !.config/systemd
 !.config/user-dirs.locale
 !.config/user-dirs.dirs
