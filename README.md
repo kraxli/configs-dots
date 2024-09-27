@@ -1,4 +1,5 @@
 # configs-dots
+
 My linuxmint / ubuntu configuration (configs) and dot-files / directories
 
 
@@ -13,7 +14,7 @@ git pull origin main
 git branch --set-upstream-to=origin/main main
 ```
 
-Change `.gitignore` to exlude everything but a few files and directories:
+Change `.gitignore` to exlude everything but a few files and directories (see [here](https://git-scm.com/docs/gitignore.html#_examples)):
 
 ```git
 /*
