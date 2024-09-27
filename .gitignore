@@ -1,0 +1,64 @@
+
+# see: https://stackoverflow.com/a/43438694
+# see: https://stackoverflow.com/a/73686222
+# git-check-ignore
+
+# TO DEL repos:
+# home_dave
+# .config
+
+# -------------------------------------------------------
+# exlude everything
+# -------------------------------------------------------
+# /**/ ignores only dirs
+# /* ignores dirs and files
+# /**/*.* ignores every file within a and it's subfolders
+# the /* - without the slash, the wildcard would also exclude everything within foo/bar
+
+/*
+
+# -------------------------------------------------------
+# re-include 
+# -------------------------------------------------------
+
+# "It is not possible to re-include a file if a parent directory of that file is excluded.": ** matches everything, so negating a child whose parent is ignored can't be done.
+# Solution:
+#   !custom_path                       # allow Git to look inside this folder
+#   custom_path/*                      # but ignore everything it contains
+#   !custom_path/extras                # allow Git to look inside this folder
+#   custom_path/extras/*               # but ignore everything it contains
+#   !custom_path/extras/path_to_keep   # allow Git to see the file or folder you want to commit
+
+# -- files --
+
+# !.*  # all dot files
+!.gitignore
+!.zshrc
+!.bashrc
+!.Rprofile
+
+# -- directories --
+
+!.config
+.config/*
+!.config/radian
+!.config/poetry
+!.config/black
+!.config/autostart
+!.config/lazygit
+!.config/Code
+.config/Code/*
+!.config/Code/User/
+.config/Code/User/*
+!.config/Code/User/*.json
+!.config/Code/User/*.lua
+
+!.ipython/
+.ipython/*
+!.ipython/profile_default
+.ipython/profile_default/*
+!.ipython/profile_default/startup
+
+# !.julia
+# !.jupyter
+

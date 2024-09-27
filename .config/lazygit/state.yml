@@ -1,0 +1,19 @@
+lastupdatecheck: 0
+recentrepos:
+- /home/dave
+- /home/dave/.config/nvim
+- /home/dave/Gdrive/01_Projects/blog_socionomics_astrowind
+- /home/dave/.config/nvim-merge
+- /home/dave/.local/share/nvim/lazy/toggleterm.nvim
+- /home/dave/Gdrive/01_Projects/blog_socionomics_django
+- /home/dave/.config/astronvim
+- /home/dave/.config/nvim-v3.bak
+- /home/dave/.config/astronvim/lua/user
+- /home/dave/.config/astronvim/lua/local
+- /home/dave/temp/astronvim_lua_user2
+startuppopupversion: 4
+customcommandshistory:
+- q
+- Q
+- qa
+hidecommandlog: true

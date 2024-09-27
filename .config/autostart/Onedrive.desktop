@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/cpulimit -z -l 20 -- /usr/bin/onedrive --monitor --confdir=~/.config/onedrive
+X-GNOME-Autostart-enabled=false
+NoDisplay=false
+Hidden=false
+Name[en_US]=Onedrive
+Comment[en_US]=No description
+X-GNOME-Autostart-Delay=5

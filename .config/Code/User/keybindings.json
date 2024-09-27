@@ -1,0 +1,65 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+7",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+[Backquote]",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    // {
+    //     "command": "editor.action.clipboardCopyAction",
+    //     "key": "y",
+    // },
+    // {
+    //     "key": "ctrl+v",
+    //     "command": "workbench.action.terminal.paste",
+    //     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    // },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-workbench.action.terminal.paste",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-workbench.action.terminal.paste",
+    },
+    {
+        "key": "ctrl+c",
+        "command": "workbench.action.terminal.copy",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "-workbench.action.terminal.copy",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-editor.action.clipboardPasteAction"
+    }
+]
+
+// gcc:      editor.action.commentLine
+// <c-b>:    workbench.action.toggleSidebarVisibility
+// gd:       editor.action.revealDefinition

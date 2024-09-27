@@ -1,0 +1,41 @@
+{
+    "editor.fontSize": 16,
+    "scm.inputFontSize": 14,
+    "window.zoomLevel": 2,
+    //
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    //
+    // "vscode-neovim.neovimInitVimPaths.linux": "/home/dave/.config/nvim/init.lua",
+    "vscode-neovim.neovimInitVimPaths.linux": "/home/dave/.config/nvim/init_vscode.lua",
+    "vscode-neovim.neovimInitVimPaths.win32": "/home/dave/.config/nvim/init_vscode.lua",
+    "vscode-neovim.logOutputToConsole": true,
+    //
+    "vscode-neovim.compositeTimeout": 300,
+    "vscode-neovim.compositeKeys": {
+        "jj": {
+            "command": "vscode-neovim.escape",
+        },
+        "kk": {
+            "command": "vscode-neovim.escape",
+        },
+    },
+
+    // https://stackoverflow.com/questions/52310689/use-ipython-repl-in-vs-code:
+    // "python.terminal.launchArgs": ["-m", "Ipython", "-c", "Ipython.embed()"],
+    // "python.terminal.launchArgs": ["-m", "ptpython", "-c", "from ptpython import embed"],
+    "python.terminal.launchArgs": [
+        "-m",
+        "IPython",
+        "--no-autoindent",
+        "-i",
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.autoSave": "afterDelay",
+    "gitlens.views.commitDetails.files.layout": "list",
+    "settingsSync.ignoredExtensions": [
+
+    ],
+    "workbench.editor.enablePreview": false,
+}

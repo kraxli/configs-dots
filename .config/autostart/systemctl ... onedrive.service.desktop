@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=systemctl --user restart onedrive.service
+X-GNOME-Autostart-enabled=false
+NoDisplay=false
+Hidden=false
+Name[en_US]=systemctl ... onedrive.service
+Comment[en_US]=start systemctl ... onedrive.service
+X-GNOME-Autostart-Delay=6
