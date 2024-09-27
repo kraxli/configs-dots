@@ -58,7 +58,6 @@
 !.config/pypoetry
 .config/pypoetry/*.lock
 
-
 # !.config/onedrive
 .config/onedrive/*
 !.config/onedrive/config
