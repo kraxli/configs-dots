@@ -6,7 +6,7 @@ R_LIBS_USER='~/.R/libs/'
 # install.packages() cannot be used from .Rprofile!
 # -------------------------------------------------------
 
-# list.of.packages <- c('lintr', 'roxygen2', 'xml2', 'languageserver', 'ggplot2', 'dplyr', 'lattice')
+# list.of.packages <- c('lintr', 'roxygen2', 'xml2', 'languageserver', 'ggplot2', 'dplyr', 'xts', 'quantmod', 'TTR','lattice', 'tidyverse', 'tidyquant')
 # new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]  # or: setdiff(packages, rownames(installed.packages()))
 # if(length(new.packages)) install.packages(new.packages)
 
