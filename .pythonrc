@@ -3,7 +3,21 @@
 
 import readline
 import rlcompleter
+import visidata
+# import pandas as pd
 
 readline.parse_and_bind("tab: complete")
+
+def vd_obj(obj) -> None:
+    visidata.pyobj.view(obj)
+
+# def vd_dataframe(df: pd.DataFrame) -> None:
+def vd_dataframe(df) -> None:
+    visidata.vd.view_pandas(df)
+
+# Aliases
+vd = vd_dataframe
+vd_df = vd_dataframe
+vdo = vd_obj
 
 print("~/.pythonrc loaded")

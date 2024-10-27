@@ -2,6 +2,8 @@
 R_LIBS_USER='~/.R/libs/'
 .libPaths(R_LIBS_USER, include.site = TRUE)
 
+lintr.linter_file = "~/.config/lintr"
+
 # -------------------------------------------------------
 # install.packages() cannot be used from .Rprofile!
 # -------------------------------------------------------
